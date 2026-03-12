@@ -204,8 +204,8 @@ class DCGC(nn.Module):
         key = nn.SiLU()(key)  # activation
         # key = nn.SiLU()(key)  # activation
 
-        channel_attention = F.softmax(key, dim=1)  # Shape: (N, nc, rank)  select feature
-        feature_attention = F.softmax(key, dim=2)  # Shape: (N, nc, rank)  select channel
+        channel_attention = F.softmax(key, dim=1)  # Shape: (N, nc, rank)  select channel
+        feature_attention = F.softmax(key, dim=2)  # Shape: (N, nc, rank)  select feature
 
         '''dropout'''
         # channel_attention = self.dropout(channel_attention)
