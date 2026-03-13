@@ -1,6 +1,10 @@
 # DCGC
-Our code for DCGC.
+This repository contains the official PyTorch implementation of the paper
 
-Main model structure in model.py
+main.py: The main entry point of the project. It handles the complete training loop, validation, and testing phases.
 
-Use python main.py to reproduce.
+model.py: Contains the core architecture of the DCGC model. This includes the embedding layer, the mixture of convolutional experts, the dual-attention mechanism, the personalized gating module, and the implementation of the contrastive learning loss for the auxiliary task.
+
+data_generator.py: Utilities for tensor data processing. 
+
+metrics.py: Contains the implementation of evaluation metrics (e.g., RMSE, MAE) used to assess the performance of the tensor factorization task.
