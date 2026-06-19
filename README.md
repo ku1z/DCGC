@@ -4,11 +4,10 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Official PyTorch implementation of **DCGC**, a tensor factorization model that combines convolutional feature extraction, dual attention, personalized gating, and an auxiliary contrastive learning objective for contextual recommendation prediction.
+Official PyTorch implementation of **DCGC**, a tensor factorization model that combines mixture of conv experts, dual attention, personalized gating, and an auxiliary contrastive learning objective for sparse tensor completion.
 
 ## Highlights
 
-- Learns user, item, and context embeddings from sparse tensor observations.
 - Models pairwise interactions with convolutional expert channels.
 - Uses dual attention over channels and latent features.
 - Adds a personalized gating module to refine interaction representations.
